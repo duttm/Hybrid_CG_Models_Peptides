@@ -24,27 +24,26 @@ This code has been developed by Akash Banerjee in the Prof. Meenakshi Dutt labor
 2. The Amber LEaP tool is used to build the initial AA peptide configuration. [http://ambermd.org/tutorials/pengfei/index.htm]
 3. The SPC/E water model is used to solvate peptide systems. 
 
-## Instructions for Running Self-Assembly Simulations in CG representation: 
+## Instructions for simulating a single CG V6K2 peptide in aqueous solution: 
 
-1. Go to  ->simulation.bash
-2. You will need a GROAMCS executable to run this simulation. Please enter the path for the executable in the appropriate location. 
-3. Run the script using: ./simulation.bash
-4. The bash file will run the simulation for 1ns (may take around 5 hours on a regular Desktop computer). 
-5. A file called as output-CG.gro would be dumped at the end of the simulation. You can visualize this file using VMD [https://www.ks.uiuc.edu/Research/vmd/] or any other visulation software of your choice.
-6. In VMD, you will be able to see that the peptides are beginning to self-assemble into a nanorod. 
-6. In order to get stable nanorods, please run the simulation for an additional 4 ns. (This can be done by changing the number of MD steps in the grompp_CG.mdp file)
+1. Go to VnKm_Peptides/Coarse_Grained_Simulations/1peptide and open simulation_bash.bash
+2. You will need a GROAMCS executable to run this simulation. Please enter the path for the executable in the appropriate location.
+4. Run the script using: ./simulation_bash.bash
+5. The bash file will run the simulation for 1ns (may take around 20 minutes on a regular Desktop computer). 
+6. A file called as output-CG.gro would be dumped at the end of the simulation. You can visualize this file using VMD [https://www.ks.uiuc.edu/Research/vmd/] or any other visulation software of your choice.
+7. To analyze the simulation trajectory, please run the simulation for an additional 100 ns. (This can be done by changing the number of MD steps in the grompp.mdp file)
+8. Steps 1 to 7 can be repeated for the 8 peptide system. Go to VnKm_Peptides/Coarse_Grained_Simulations/8peptides to launch a new simulation. 
 
 ### Additional Notes 
 
-1. All potentials are located in Nanorod_Simulations->Pots
-2. For some versions of GROMACS, you may need to change certain features in the MDP file. 
-3. You can hike the timestep after initial equilibration for faster self-assembly. 
+1. For some versions of GROMACS, you may need to change certain features in the MDP file. 
+2. You can hike the timestep after initial equilibratio. 
 
 ### Compilation Notes: 
 
-We have reproduced our results (formation of nanorod+ associated analysis) in following computational resources: 
+We have reproduced our results in following computational resources: 
 
-1. Stampede2 super computer provided by XSEDE (1 node that has 64 cores) [https://portal.xsede.org/tacc-stampede2]
+1. Bridges2 super computer provided by XSEDE (8 cores on RM-shared queue) [https://www.psc.edu/resources/bridges-2/user-guide-2/]
 2. Desktop computer (8 MPI threads)
 3. GROMACS versions: 5.1.2 and 2018.3 
 
