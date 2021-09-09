@@ -5,8 +5,8 @@ This code has been developed by Akash Banerjee in the Prof. Meenakshi Dutt labor
 **Project Duration**: September 2018 to June 2021
 
 **Modeled Systems**:
-1. A single coarse-grained (CG) V<sub>6</sub>K2 peptide in aqueous solution
-2. Multiple CG V6K2 peptides in aqueous solution
+1. A single coarse-grained (CG) V<sub>6</sub>K<sub>2</sub> peptide in aqueous solution
+2. Multiple CG V<sub>6</sub>K<sub>2</sub> peptides in aqueous solution
 
 
 **Approach**: Bottom-up coarse-graining - where all potentials are developed by using All Atom (AA) Molecular Dynamics simulations as reference. 
@@ -24,7 +24,7 @@ This code has been developed by Akash Banerjee in the Prof. Meenakshi Dutt labor
 2. The Amber LEaP tool is used to build the initial AA peptide configuration. [http://ambermd.org/tutorials/pengfei/index.htm]
 3. The SPC/E water model is used to solvate peptide systems. 
 
-## Instructions for simulating a single CG V6K2 peptide in aqueous solution: 
+## Instructions for simulating a single CG V<sub>6</sub>K<sub>2</sub> peptide in aqueous solution: 
 
 1. Go to VnKm_Peptides/Coarse_Grained_Simulations/1peptide and open simulation_bash.bash
 2. You will need a GROAMCS executable to run this simulation. Please enter the path for the executable in the appropriate location (set value for the variable 'exp_grompp').
