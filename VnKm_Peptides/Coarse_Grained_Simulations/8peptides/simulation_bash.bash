@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#We have run this simulation on the following GROMACS versions : GROMACS 5, 2016.6, 2018.3, 2018 and 2020.2
+#We have run this simulation on the following GROMACS versions : GROMACS 5, 2016.6, 2018 and 2018.3.
 #The simulation has been tested on the following machines: 
 #1. Bridges2 (8 cores on the RM-shared queue)
 # link to Bridges2 userguide: https://www.psc.edu/resources/bridges-2/user-guide-2/
